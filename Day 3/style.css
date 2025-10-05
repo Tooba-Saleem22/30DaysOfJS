@@ -1,0 +1,107 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('background.jpeg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.weather-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  height: 99vh;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  backdrop-filter: blur(8px);
+  color: #fff;
+ 
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.search-box {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.search-box input {
+  width: 75%;
+  padding: 12px 20px;
+  padding-right: 100px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.search-box input::placeholder {
+  color: #eee;
+}
+
+.search-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff22;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.search-button:hover {
+  background-color: #ffffff55;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.empty-state img {
+  width: 560px; /* image badi kar di */
+  opacity: 0.95;
+  margin-bottom: 25px;
+}
+
+.hint-text {
+  font-size: 20px;
+  color: #f1f1f1;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.forecast-box {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 15px;
+  width: 120px;
+  box-shadow: 0 0 5px rgba(255,255,255,0.3);
+  margin: 10px;
+  color: #fff;
+  font-size: 14px;
+}
