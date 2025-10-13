@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advice generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="background: url('background.jpeg') no-repeat center center/cover; margin: 0; height: 100vh;">
+
+  <div class="container">
+    <h1>Unlock Your Advice of the Day</h1>
+
+    <!-- Uncle image -->
+    <img src="uncle-removebg-preview.png" alt="Advice Image" class="middle-image" id="uncleImage" />
+
+    <div class="bottom-content">
+      <!-- Corrected style: quote closed properly -->
+      <p id="adviceText" class="advice-text" style="display: none;">Click the button to get advice!</p>
+      <button onclick="getAdvice()">Get Advice</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
