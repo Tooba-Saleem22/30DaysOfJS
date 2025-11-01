@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple JS Image Slider</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="video (1).mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Main Container for Centering Everything -->
+  <div class="container">
+    <div class="slider">
+      <div class="slides">
+        <img src="img1.jpeg" class="slide active" alt="Image 1" />
+        <img src="img2.jpeg" class="slide" alt="Image 2" />
+        <img src="img3.jpeg" class="slide" alt="Image 3" />
+        <img src="img4.jpeg" class="slide" alt="Image 4" />
+        <img src="img5.jpeg" class="slide" alt="Image 5" />
+        <img src="img6.jpeg" class="slide" alt="Image 6" />
+      </div>
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
